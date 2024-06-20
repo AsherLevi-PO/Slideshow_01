@@ -1,3 +1,5 @@
+<! -- Remember to ed it the file in both places-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,14 +44,19 @@ body {
   opacity: 1;
 }
 
-
+<! -- Change the names and extensions based on the files you want to show -->
 .slide:first-child {
-  background: url("1.png") no-repeat
+  background: url("1.jpg") no-repeat
     center top/cover;
 }
 
 .slide:nth-child(2) {
-  background: url("2.png") no-repeat
+  background: url("2.jpg") no-repeat
+    center top/cover;
+}
+
+  .slide:nth-child(2) {
+  background: url("3.png") no-repeat
     center top/cover;
 }
 
@@ -102,9 +109,11 @@ body {
 </head>
 
 <body>
+  <! -- Add as many lines as the pictures you have -->
   <!-- partial:index.partial.html -->
   <div class="slider">
     <div class="slide current"></div>
+    <div class="slide"></div>
     <div class="slide"></div>
   
   </div>
